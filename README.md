@@ -18,8 +18,7 @@ Let's Start
 ---
 ## Contents
 - [1. Ubuntu Setup](#1-Ubuntu-Setup)
-  - [1.1 Tools Setup](#11-Tools-Setup)
-- [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-Setup)
+- [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-Software-Setup)
 - [3. Visual Studio Code Setup](#3-Visual-Studio-Code-Setup)
 - [4. Necessary Libraries Installation](#4-Necessary-Libraries-Installation)
 - [5. MicroBlaze- An Introduction](#5-MicroBlaze-An-Introduction)
@@ -28,5 +27,11 @@ Let's Start
 
 ## 1. Ubuntu Setup
 ### I would strongly suggest to dual boot your system rather than only keeping Ubuntu 24.04.1 LTS. 
-  - You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic)
+  - You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic).
+## 2. Xilinx Unified Software Setup
+### I have used 2023.2 version of the Xilinx Unified Software.
+  - You can download the Linux Installer from this [site](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-2.html)
+  - I would suggest installing the Vitis Core Development Kit - 2023.2, which is under the section Vitis (SW Developer) tab.
+  - Once downloaded, note down the name of the installed 'bin' file name. You will need to remember this in order to open the installer through the Ubuntu Terminal.
+  - In my case, it is 'FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin'.
 
