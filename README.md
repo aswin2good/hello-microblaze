@@ -28,5 +28,5 @@ Let's Start
 
 ## 1. Ubuntu Setup
 ### I would strongly suggest to dual boot your system rather than only keeping Ubuntu 24.04.1 LTS. 
-    YOu can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic)
+    You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic)
 
