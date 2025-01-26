@@ -20,6 +20,7 @@ Let's Start
 - [1. Ubuntu Setup](#1-Ubuntu-Setup)
 - [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-Software-Setup)
 - [3. Visual Studio Code Setup](#3-Visual-Studio-Code-Setup)
+  - [3.1. Install Serial Monitor](#31-Install-Serial-Monitor)
 - [4. Necessary Libraries Installation](#4-Necessary-Libraries-Installation)
 - [5. MicroBlaze- An Introduction](#5-MicroBlaze-An-Introduction)
 - [6. Project Procedure](#6-Project-Procedure)
@@ -59,5 +60,13 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    - The home page should look like this.
 ## 3. Visual Studio Code Setup
 - I would suggest you the download the Visual Studio Code by referring to this [video](https://www.youtube.com/watch?v=vLm2EHIaxOo)
+- Replace apt, Install GDEBI.
+- Using GDEBI Package Installer it is easier to open Visual Studio Code.
+- Now download '.deb package (64-bit) ' from this [site](https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux)
+- Once it gets downloaded, open the package using GDEBI Package Installer.
+- Now you may see the Visual Studio Code icon on the Ubuntu 'Show Tabs' section.
+- Open it to verify whether it loads well.
+  
+### 3.1 Install Serial Monitor
 
    
