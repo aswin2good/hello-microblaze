@@ -30,8 +30,14 @@ Let's Start
   - You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic).
 ## 2. Xilinx Unified Software Setup
 ### I have used 2023.2 version of the Xilinx Unified Software.
-  - You can download the Linux Installer from this [site](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-2.html)
+  - You can download the Linux Self Extracting Web Installer from this [site](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-2.html)
   - I would suggest installing the Vitis Core Development Kit - 2023.2, which is under the section Vitis (SW Developer) tab.
   - Once downloaded, note down the name of the installed 'bin' file name. You will need to remember this in order to open the installer through the Ubuntu Terminal.
   - In my case, it is 'FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin'.
-
+  - Now, open the Ubuntu Terminal and type the following commands to open Linux Self Extracting Web Installer by Xilinx.
+```
+$ cd $HOME/Downloads
+$ chmod u+x FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
+$ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
+```
+- ### Note that you need to replace the file name according to your version in order to open the installer.
