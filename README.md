@@ -26,7 +26,7 @@ Let's Start
 - [7. Results](#7-Results)
 
 ## 1. Ubuntu Setup
-### I would strongly suggest to dual boot your system rather than only keeping Ubuntu 24.04.1 LTS. 
+### I would strongly suggest to Dual Boot your system rather than only keeping Ubuntu 24.04.1 LTS on your system.
   - You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic).
 ## 2. Xilinx Unified Software Setup
 ### I have used 2023.2 version of the Xilinx Unified Software.
@@ -41,3 +41,19 @@ $ chmod u+x FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 ```
 - ### Note that you need to replace the file name according to your version in order to open the installer.
+ - Login with your credentials.
+ - Select Vitis among the different options.
+ - Click on next.
+ - Choose the installation directory where you want to store the files. I would suggest to store in '/tools/Xilinx'.
+ - Install.
+ - Once installation is complete, we must ensure all our necessary softwares are properly loading. To check, proceed with the following commands on the Ubuntu Terminal:
+ - ### Vivado-
+   ```
+   $ /tools/Xilinx/Vivado/2023.2/bin/vivado
+   ```
+- ### Vitis Unified Software-
+   ```
+   $ /tools/Xilinx/Vitis/2023.2/bin/vitis
+   ```
+
+   
