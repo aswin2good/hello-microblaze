@@ -1,4 +1,4 @@
-# Hello-Microblaze
+# Hello-MicroBlaze
 ## Demonstration of Hello World Program by Implementation of MicroBlaze Processor on FPGA
 ---
 
@@ -18,10 +18,10 @@ Let's Start
 ---
 ## Contents
 - [1. Ubuntu Setup](#1-Ubuntu-Setup)
-- [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-Software-Setup)
-- [3. Visual Studio Code Setup](#3-Visual-Studio-Code-Setup)
-  - [3.1. Install Serial Monitor](#31-Install-Serial-Monitor)
-- [4. Necessary Libraries Installation](#4-Necessary-Libraries-Installation)
+- [2. Necessary Libraries Installation](#2-Necessary-Libraries-Installation)
+- [3. Xilinx Unified Software Setup](#3-Xilinx-Unified-Software-Setup)
+- [4. Visual Studio Code Setup](#4-Visual-Studio-Code-Setup)
+  - [4.1. Install Serial Monitor](#41-Install-Serial-Monitor)
 - [5. MicroBlaze- An Introduction](#5-MicroBlaze-An-Introduction)
 - [6. Project Procedure](#6-Project-Procedure)
 - [7. Results](#7-Results)
@@ -29,7 +29,21 @@ Let's Start
 ## 1. Ubuntu Setup
 ### I would strongly suggest to Dual Boot your system rather than only keeping Ubuntu 24.04.1 LTS on your system.
   - You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic).
-## 2. Xilinx Unified Software Setup
+  - Make sure you have a minimum 16GB Pendrive available with you.
+
+## 2. Necessary Libraries Installation
+- Run the following commands one by one after proper installation of Ubuntu 24.04.1 LTS
+```
+$ sudo apt update
+$ sudo apt upgrade-y
+$ sudo apt install build-essential
+$ sudo apt install libtinfo-dev
+$ sudo apt-get install libtinfo5
+$ sudo apt install libncurses5
+$ sudo ln -s /lib/x86_64-linux-gnu/libtinfo.so.6 /lib/x86_64-linux-gnu/libtinfo.so.5
+```
+
+## 3. Xilinx Unified Software Setup
 ### I have used 2023.2 version of the Xilinx Unified Software.
   - You can download the Linux Self Extracting Web Installer from this [site](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/2023-2.html)
   - I would suggest installing the Vitis Core Development Kit - 2023.2, which is under the section Vitis (SW Developer) tab.
@@ -58,7 +72,8 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    $ /tools/Xilinx/Vitis/2023.2/bin/vitis
    ```
    - The home page should look like this.
-## 3. Visual Studio Code Setup
+     
+## 4. Visual Studio Code Setup
 - I would suggest you the download the Visual Studio Code by referring to this [video](https://www.youtube.com/watch?v=vLm2EHIaxOo)
 - Replace apt, Install GDEBI.
 - Using GDEBI Package Installer it is easier to open Visual Studio Code.
@@ -66,7 +81,27 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - Once it gets downloaded, open the package using GDEBI Package Installer.
 - Now you may see the Visual Studio Code icon on the Ubuntu 'Show Tabs' section.
 - Open it to verify whether it loads well.
+  - The home page should look like this.
   
-### 3.1 Install Serial Monitor
+### 4.1 Install Serial Monitor
+- Click on Extensions.
+- Search for Serial Monitor 
+- Make sure that the publisher is Microsoft Corporation.
+  - It should be like this.
+- Click on install.
+- To make sure the proper installation, use key board shortcut 'Ctrl+Shift+P' to open search bar, type serial monitor.
+- Click on the option- 'View: Toggle Serial Monitor'
+  - It should look like this.
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
