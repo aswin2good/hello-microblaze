@@ -13,5 +13,7 @@ Let's Start
 
 ---
 
-# 
+## NOTE: This repository follows Linux based Operating System. I have used [Ubuntu 24.04.1 LTS](https://ubuntu.com/download/desktop).
 
+---
+## Contents
