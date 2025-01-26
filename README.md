@@ -14,6 +14,11 @@ Let's Start
 ---
 
 ## NOTE: This repository follows Linux based Operating System. I have used [Ubuntu 24.04.1 LTS](https://ubuntu.com/download/desktop).
-
+Make sure all the libraries that are necessary for all these below software are installed in your system. Also this would cost a lot of space as well so I suggest to get atleast 250GB of storage and atleast 8GB RAM.
 ---
 ## Contents
+- [1. Ubuntu Setup](#1-Ubuntu-setup)
+  - [1.1 Tools Setup](#11-Tools-setup)
+  - [1.2 PDK Setup](#12-PDK-setup)
+- [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-setup)
+  - [2.1 
