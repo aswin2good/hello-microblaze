@@ -51,9 +51,13 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    $ /tools/Xilinx/Vivado/2023.2/bin/vivado
    ```
+   - The home page should look like this.
 - ### Vitis Unified Software-
    ```
    $ /tools/Xilinx/Vitis/2023.2/bin/vitis
    ```
+   - The home page should look like this.
+## 3. Visual Studio Code Setup
+- I would suggest you the download the Visual Studio Code by referring to this [video](https://www.youtube.com/watch?v=vLm2EHIaxOo)
 
    
