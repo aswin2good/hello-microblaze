@@ -17,14 +17,16 @@ Let's Start
 #### Make sure all the libraries that are necessary for all these below software are installed in your system. Also this would cost a lot of space as well so I suggest to get atleast 250GB of storage and atleast 8GB RAM.
 ---
 ## Contents
-- [1. Ubuntu Setup](#1-Ubuntu-setup)
-  - [1.1 Tools Setup](#11-Tools-setup)
-- [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-setup)
-- [3. Visual Studio Code Setup](#3-Visual-Studio-Code-setup)
+- [1. Ubuntu Setup](#1-Ubuntu-Setup)
+  - [1.1 Tools Setup](#11-Tools-Setup)
+- [2. Xilinx Unified Software Setup](#2-Xilinx-Unified-Setup)
+- [3. Visual Studio Code Setup](#3-Visual-Studio-Code-Setup)
 - [4. Necessary Libraries Installation](#4-Necessary-Libraries-Installation)
 - [5. MicroBlaze- An Introduction](#5-MicroBlaze-An-Introduction)
 - [6. Project Procedure](#6-Project-Procedure)
 - [7. Results](#7-Results)
 
-## 1. Ubuntu setup
+## 1. Ubuntu Setup
+### I would strongly suggest to dual boot your system rather than only keeping Ubuntu 24.04.1 LTS. 
+    YOu can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic)
 
