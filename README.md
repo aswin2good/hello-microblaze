@@ -67,12 +67,14 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    $ /tools/Xilinx/Vivado/2023.2/bin/vivado
    ```
+   - The Vivado home page should look like this.
     ![The home page should look like this.](./Images/vivado_start.png)
 - ### Vitis Unified Software-
    ```
    $ /tools/Xilinx/Vitis/2023.2/bin/vitis
    ```
-   - The home page should look like this.
+   - The Uninfied IDE home page should look like this.
+   - ![The home page should look like this.](./Images/vitis_unified_ide_start.png)
      
 ## 4. Visual Studio Code Setup
 - I would suggest you the download the Visual Studio Code by referring to this [video](https://www.youtube.com/watch?v=vLm2EHIaxOo)
@@ -82,7 +84,8 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - Once it gets downloaded, open the package using GDEBI Package Installer.
 - Now you may see the Visual Studio Code icon on the Ubuntu 'Show Tabs' section.
 - Open it to verify whether it loads well.
-  - The home page should look like this.
+  - The Visual Studio Code home page should look like this.
+  - ![The home page should look like this.](./Images/visual_studio_code_start.png)
   
 ### 4.1 Install Serial Monitor
 - Click on Extensions.
@@ -93,6 +96,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - To make sure the proper installation, use key board shortcut 'Ctrl+Shift+P' to open search bar, type serial monitor.
 - Click on the option- 'View: Toggle Serial Monitor'
   - It should look like this.
+  - ![The home page should look like this.](./Images/serial_monitor_interface.png)
 
 ## 5. MicroBlaze- An Introduction
 - The AMD MicroBlaze processor offers a range of customizable, easy-to-integrate, 32-bit/64-bit microprocessor configurations based on the efficient RISC Harvard architecture.
