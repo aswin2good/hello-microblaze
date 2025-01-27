@@ -67,7 +67,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    $ /tools/Xilinx/Vivado/2023.2/bin/vivado
    ```
-    ![The home page should look like this.](./Pictures/Screenshots/vivado_start.png)
+    ![The home page should look like this.](./Images/vivado_start.png)
 - ### Vitis Unified Software-
    ```
    $ /tools/Xilinx/Vitis/2023.2/bin/vitis
