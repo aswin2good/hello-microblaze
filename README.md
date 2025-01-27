@@ -95,8 +95,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - Click on install.
 - To make sure the proper installation, use key board shortcut 'Ctrl+Shift+P' to open search bar, type serial monitor.
 - Click on the option- 'View: Toggle Serial Monitor'
-  - It should look like this.
-  - ![The home page should look like this.](./Images/serial_monitor_interface.png)
+
 
 ## 5. MicroBlaze- An Introduction
 - The AMD MicroBlaze processor offers a range of customizable, easy-to-integrate, 32-bit/64-bit microprocessor configurations based on the efficient RISC Harvard architecture.
