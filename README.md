@@ -133,30 +133,44 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    ### 6.1 (Vivado)
    - In the Quick Start Tab, click on Create Project.
+     ![](./Images/vivado_start.png)
    - Give a project name of your choice and specify a directory
+     ![](./Images/RTL_Project_Selection.png)
    - Under default part section click on Boards and search for Basys3.
+     ![](./Images/Basys3_Board_Selection.png)
      - #### NOTE: If you could not find, you can also select xc7a35tcpg236-1 part under the Parts section. But I would strongly suggest to download Basys3 Definition Board File (___refer to Section 3 of this readme file___)
    - Click on next until we reach the project dashboard.
+     ![](./Images/Vivado_project_interface.png)
    - In the Project Manager tab, under the IP INTEGRATOR section, click on Create Block Design.
      - A block design provides a visual representation of your hardware design, and can be used to easily connect and configure IP cores.
    - Now, the interface should like this:
+     ![](./Images/block_design_interface.png)
    - Click on + (To add a new IP- An IP block in Vivado is a reusable unit of logic that can be used to create complex system designs)
+     ![](./Images/adding_ip.png)
    - Search for Microblaze and select it.
    - It should look like this(#only microblaze pic)
+     ![](./Images/only_microblaze_block.png)
    - Click on Run Block Automation.
    - In the pop up window, under the local memory option, you may change it to 128KB to allocate more on-chip Block RAM (BRAM).
    - Click on OK.
    - Again, click on + (to add a new IP).
-   - Search for AXI Uartlite and select it.(it is a soft core interface that allows for asynchronous serial data transfer.  It connects to the Advanced Microcontroller Bus Architecture specification's Advanced eXtensible Interface)
+   - Similarly, Search for AXI Uartlite and select it.(it is a soft core interface that allows for asynchronous serial data transfer. It connects to the Advanced Microcontroller Bus Architecture specification's Advanced eXtensible Interface)
+     ![](./Images/clocking_wizard.png)
    - Now click on Clocking Wizard as shown in the figure, and change the CLK_IN to sys clock and EXTERNAL RESET_IN to reset.
+     ![](./Images/clocking_wizard_settings.png)
    - Click on Run Connection Automation, check all the boxes and click OK.
+     ![](./Images/connection_automation.png)
    - Now click on regenerate layout, to make the design more simplistic and easy to understand.
+     ![](./Images/regenrated_layout.png)
    - Click on F6 to validate design.
    - Click on Address Editor section and just have a look at the Master Base Address, Master High Address and Range:
+     ![](./Images/address_editor.png)
    - Now click on Run Synthesis option, under Project Manager tab.
    - Once the Synthesis Completed tab pops up, click on Open Synthesized design.
      - The package should look similar to this:
+       ![](./Images/package_synthesis.png)
      - The device containing LUTs and Flip-FLops should look like this:
+       ![](./Images/device_synthesis.png)
    - Scroll down in the Project Manager tab and click on Generate Bitstream.
    - Once bitstream is generated, click on File tab, click on Export> Export Hardware> Next> Include Bitstream> Create a XSA file 
    - After Exporting Hardware, click on Tools section, click on Launch Vitis IDE.
@@ -164,6 +178,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    - We will enter the Vitis IDE home interface.
    - Under Embedded Developement, click on Create Platform Component.
    - Enter your desired name, click on next, under the Select Platform Flow, click on Hardware Design, browse and select for the wrapper file/ XSA file we have created:
+     ![](./Images/hardware_design_select.png)
    - After that, click on next, and finish.
    - Now, under View tab, click on Examples option, select Hello World. Select the previously created platform flow and click on next.
    - Click on Build under Flow tab.
@@ -175,9 +190,12 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    - use key board shortcut 'Ctrl+Shift+P' to open search bar, type serial monitor.
    - Click on the option- 'View: Toggle Serial Monitor'
    - Parallely open Putty SSH Client which we had installed earlier:
+      ![](./Images/putty_ssh_client.png)
       - Click on Serial> instead on dev/tty/S0, write dev/tty/USB0 and click on Open. (This USB0 is nothing but the USB Port on your system where FPGA Board is connected).
    - Come back to Visual Studio Code, click on Ports, select dev/tty/USB0, and finally click on Start Monitoring option.
    - Press the reset button on your FPGA and note the output on the serial monitor.
+   ## The output should be like this:
+   ![](./Images/serial_monitor_interface.png)
 
 
 
