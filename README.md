@@ -75,6 +75,12 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    - The Uninfied IDE home page should look like this.
    - ![The home page should look like this.](./Images/vitis_unified_ide_start.png)
+- ### Installing the Development Board Definition in the Vitis Software
+  #### I will be using Digilent Basys 3 FPGA Board
+ - the github link from where to download the master.zip [file](https://github.com/Digilent/vivado-boards/archive/master.zip)
+ - Extract the zip file
+ - go to /vivado-boards-master/new/board_files and copy basys3 folder
+ - paste the folder to /tools/Xilinx/Vivado/2023.2/data/boards/board_files directory (create a boards_files folder if missing and then paste it)
      
 ## 4. Visual Studio Code Setup
 - I would suggest you the download the Visual Studio Code by referring to this [video](https://www.youtube.com/watch?v=vLm2EHIaxOo)
@@ -116,6 +122,13 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - Compatible with any AMD adaptive SoC or FPGA supported in the Vivado or IDS design tools​
 - Three-stage pipeline for optimal footprint and 5-stage pipeline for maximum performance
 
+## 6. Project Procedure
+- Open Vivado using the following command in the Ubuntu Terminal:
+   ```
+   $ /tools/Xilinx/Vivado/2023.2/bin/vivado
+   ```
+   - In the Quick Start Tab, click on Create Project.
+   - 
 
 
 
