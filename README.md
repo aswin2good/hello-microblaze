@@ -41,6 +41,7 @@ $ sudo apt install libtinfo-dev
 $ sudo apt-get install libtinfo5
 $ sudo apt install libncurses5
 $ sudo ln -s /lib/x86_64-linux-gnu/libtinfo.so.6 /lib/x86_64-linux-gnu/libtinfo.so.5
+$ sudo apt-get install putty
 ```
 
 ## 3. Xilinx Unified Software Setup
@@ -130,13 +131,12 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    $ /tools/Xilinx/Vivado/2023.2/bin/vivado
    ```
-   ### 6.1
+   ### 6.1 (Vivado)
    - In the Quick Start Tab, click on Create Project.
    - Give a project name of your choice and specify a directory
    - Under default part section click on Boards and search for Basys3.
      - #### NOTE: If you could not find, you can also select xc7a35tcpg236-1 part under the Parts section. But I would strongly suggest to download Basys3 Definition Board File (___refer to Section 3 of this readme file___)
    - Click on next until we reach the project dashboard.
-   ### 6.2
    - In the Project Manager tab, under the IP INTEGRATOR section, click on Create Block Design.
      - A block design provides a visual representation of your hardware design, and can be used to easily connect and configure IP cores.
    - Now, the interface should like this:
@@ -150,8 +150,34 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    - Search for AXI Uartlite and select it.(it is a soft core interface that allows for asynchronous serial data transfer.  It connects to the Advanced Microcontroller Bus Architecture specification's Advanced eXtensible Interface)
    - Now click on Clocking Wizard as shown in the figure, and change the CLK_IN to sys clock and EXTERNAL RESET_IN to reset.
    - Click on Run Connection Automation, check all the boxes and click OK.
-
-
+   - Now click on regenerate layout, to make the design more simplistic and easy to understand.
+   - Click on F6 to validate design.
+   - Click on Address Editor section and just have a look at the Master Base Address, Master High Address and Range:
+   - Now click on Run Synthesis option, under Project Manager tab.
+   - Once the Synthesis Completed tab pops up, click on Open Synthesized design.
+     - The package should look similar to this:
+     - The device containing LUTs and Flip-FLops should look like this:
+   - Scroll down in the Project Manager tab and click on Generate Bitstream.
+   - Once bitstream is generated, click on File tab, click on Export> Export Hardware> Next> Include Bitstream> Create a XSA file 
+   - After Exporting Hardware, click on Tools section, click on Launch Vitis IDE.
+   ### 6.2 (Vitis IDE)
+   - We will enter the Vitis IDE home interface.
+   - Under Embedded Developement, click on Create Platform Component.
+   - Enter your desired name, click on next, under the Select Platform Flow, click on Hardware Design, browse and select for the wrapper file/ XSA file we have created:
+   - After that, click on next, and finish.
+   - Now, under View tab, click on Examples option, select Hello World. Select the previously created platform flow and click on next.
+   - Click on Build under Flow tab.
+   - Once the BUild is complete, click on Vitis tab and click on Target Connections, select Local, and click on OK.
+   - Now, click on Program Device.
+   - Click on Run.
+   ### 6.3 (Visual Studio Code)
+   - Open Visual Studio Code on your system.
+   - use key board shortcut 'Ctrl+Shift+P' to open search bar, type serial monitor.
+   - Click on the option- 'View: Toggle Serial Monitor'
+   - Parallely open Putty SSH Client which we had installed earlier:
+      - Click on Serial> instead on dev/tty/S0, write dev/tty/USB0 and click on Open. (This USB0 is nothing but the USB Port on your system where FPGA Board is connected).
+   - Come back to Visual Studio Code, click on Ports, select dev/tty/USB0, and finally click on Start Monitoring option.
+   - Press the reset button on your FPGA and note the output on the serial monitor.
 
 
 
