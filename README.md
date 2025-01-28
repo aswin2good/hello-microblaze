@@ -108,7 +108,10 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - MicroBlaze processor offers flexibility, allowing for a wide range of customizations with peripheral, memory, and interface features.
 - It has found its way into many applications over the years across multiple areas, including industrial, medical, automotive, consumer, and communication markets.
 - Developers can target the MicroBlaze processor to any AMD adaptive SoC or FPGA device supported by the Vivado Design Suite.
+  ![MicroBlaze Overview Illustration](/Images/microblaze-32bit-diagram.png)
+  
 ### 5.1 Key Capabilities
+  
 #### 5.1.1 Three Different Configurations
 - Microcontroller: Ideal for executing bare-metal code​
 - Real-time processor: Ensures deterministic real-time processing on an Real-Time Operating System
@@ -127,9 +130,26 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ```
    $ /tools/Xilinx/Vivado/2023.2/bin/vivado
    ```
+   ### 6.1
    - In the Quick Start Tab, click on Create Project.
-   - 
-
+   - Give a project name of your choice and specify a directory
+   - Under default part section click on Boards and search for Basys3.
+     - #### NOTE: If you could not find, you can also select xc7a35tcpg236-1 part under the Parts section. But I would strongly suggest to download Basys3 Definition Board File (___refer to Section 3 of this readme file___)
+   - Click on next until we reach the project dashboard.
+   ### 6.2
+   - In the Project Manager tab, under the IP INTEGRATOR section, click on Create Block Design.
+     - A block design provides a visual representation of your hardware design, and can be used to easily connect and configure IP cores.
+   - Now, the interface should like this:
+   - Click on + (To add a new IP- An IP block in Vivado is a reusable unit of logic that can be used to create complex system designs)
+   - Search for Microblaze and select it.
+   - It should look like this(#only microblaze pic)
+   - Click on Run Block Automation.
+   - In the pop up window, under the local memory option, you may change it to 128KB to allocate more on-chip Block RAM (BRAM).
+   - Click on OK.
+   - Again, click on + (to add a new IP).
+   - Search for AXI Uartlite and select it.(it is a soft core interface that allows for asynchronous serial data transfer.  It connects to the Advanced Microcontroller Bus Architecture specification's Advanced eXtensible Interface)
+   - Now click on Clocking Wizard as shown in the figure, and change the CLK_IN to sys clock and EXTERNAL RESET_IN to reset.
+   - Click on Run Connection Automation, check all the boxes and click OK.
 
 
 
