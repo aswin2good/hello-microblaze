@@ -167,8 +167,10 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
      ![](./Images/address_editor.png)
    - Now click on Run Synthesis option, under Project Manager tab.
    - Once the Synthesis Completed tab pops up, click on Open Synthesized design.
+     
      - The package should look similar to this:
        ![](./Images/package_synthesis.png)
+       
      - The device containing LUTs and Flip-FLops should look like this:
        ![](./Images/device_synthesis.png)
    - Scroll down in the Project Manager tab and click on Generate Bitstream.
