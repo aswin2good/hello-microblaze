@@ -148,7 +148,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    - Click on + (To add a new IP- An IP block in Vivado is a reusable unit of logic that can be used to create complex system designs)
      ![](./Images/adding_ip.png)
    - Search for Microblaze and select it.
-   - It should look like this(#only microblaze pic)
+   - It should look like this
      ![](./Images/only_microblaze_block.png)
    - Click on Run Block Automation.
    - In the pop up window, under the local memory option, you may change it to 128KB to allocate more on-chip Block RAM (BRAM).
