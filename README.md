@@ -26,6 +26,9 @@ Let's Start
 - [6. Project Procedure](#6-Project-Procedure)
 - [7. Results](#7-Results)
 
+### You may go [here](#5-MicroBlaze-An-Introduction), if you already have Ubuntu and the needed softwares along with all the necessary files installed in your system.
+
+
 ## 1. Ubuntu Setup
 ### I would strongly suggest to Dual Boot your system rather than only keeping Ubuntu 24.04.1 LTS on your system.
   - You can follow the procedure shown in this [video](https://www.youtube.com/watch?v=XjQGGLa_Dic).
