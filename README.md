@@ -22,11 +22,11 @@ Let's Start
 - [3. Xilinx Unified Software Setup](#3-Xilinx-Unified-Software-Setup)
 - [4. Visual Studio Code Setup](#4-Visual-Studio-Code-Setup)
   - [4.1. Install Serial Monitor](#41-Install-Serial-Monitor)
-- [5. MicroBlaze- An Introduction](#5-MicroBlaze-An-Introduction)
+- [5. MicroBlaze- An Introduction](#5-MicroBlaze--An-Introduction)
 - [6. Project Procedure](#6-Project-Procedure)
 - [7. Results](#7-Results)
 
-### You may go [here](#5-MicroBlaze-An-Introduction), if you already have Ubuntu and the needed softwares along with all the necessary files installed in your system.
+### You may go [here](#5-MicroBlaze--An-Introduction), if you already have Ubuntu and the needed softwares along with all the necessary files installed in your system.
 
 
 ## 1. Ubuntu Setup
@@ -107,7 +107,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
 - Click on the option- 'View: Toggle Serial Monitor'
 
 
-## 5. MicroBlaze An Introduction
+## 5. MicroBlaze- An Introduction
 - The AMD MicroBlaze processor offers a range of customizable, easy-to-integrate, 32-bit/64-bit microprocessor configurations based on the efficient RISC Harvard architecture.
 - MicroBlaze processor offers flexibility, allowing for a wide range of customizations with peripheral, memory, and interface features.
 - It has found its way into many applications over the years across multiple areas, including industrial, medical, automotive, consumer, and communication markets.
