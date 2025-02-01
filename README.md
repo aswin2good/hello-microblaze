@@ -200,8 +200,9 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
       - Click on Serial> instead on dev/tty/S0, write dev/tty/USB0 and click on Open. (This USB0 is nothing but the USB Port on your system where FPGA Board is connected).
    - Come back to Visual Studio Code, click on Ports, select dev/tty/USB0, and finally click on Start Monitoring option.
    - Press the reset button on your FPGA Board and note the output on the serial monitor.
+     
       - Reset button on the Basys3 is (U18) as shown :
-      - ![](./Images/basys3.png)
+        ![](./Images/basys3.png)
    ## The output should be like this:
    ![](./Images/serial_monitor_interface.png)
 
