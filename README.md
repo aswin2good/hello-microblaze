@@ -197,7 +197,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    - Click on the option- 'View: Toggle Serial Monitor'
    - Parallely open Putty SSH Client which we had installed earlier:
       ![](./Images/putty_ssh_client.png)
-      - Click on Serial> instead on dev/tty/S0, write dev/tty/USB0 and click on Open. (This USB0 is nothing but the USB Port on your system where FPGA Board is connected).
+      - Click on Serial> instead on dev/tty/S0, write dev/tty/USB0 or /dev/tty/USB1 as per your system (in my case it is on /dev/tty/USB1) and click on Open. (This USB0/USB1 is nothing but the USB Port on your system where FPGA Board is connected).
    - Come back to Visual Studio Code, click on Ports, select dev/tty/USB0, and finally click on Start Monitoring option.
    - Press the reset button on your FPGA Board and note the output on the serial monitor.
      
