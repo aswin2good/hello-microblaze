@@ -173,6 +173,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
        
      - The device containing LUTs and Flip-FLops should look like this:
        ![](./Images/device_synthesis.png)
+  
    - Scroll down in the Project Manager tab and click on Generate Bitstream.
    - Once bitstream is generated, click on File tab, click on Export> Export Hardware> Next> Include Bitstream> Create a XSA file 
    - After Exporting Hardware, click on Tools section, click on Launch Vitis IDE.
@@ -200,7 +201,4 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
    ![](./Images/serial_monitor_interface.png)
 
 
-
-
-
-
+  
