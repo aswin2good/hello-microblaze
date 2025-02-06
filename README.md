@@ -203,8 +203,8 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
      
       - Reset button on the Basys3 is (U18) as shown :
         ![](./Images/basys3.png)
+# 7. Results
    ## The output should be like this:
    ![](./Images/serial_monitor_interface.png)
-
 
   
