@@ -187,6 +187,7 @@ $ sudo ./FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256_Lin64.bin
      ![](./Images/hardware_design_select.png)
    - After that, click on next, and finish.
    - Now, under View tab, click on Examples option, select Hello World. Select the previously created platform flow and click on next.
+   - Without following the previous step, you may copy the 'helloworld.c' file available in this repository and paste the conetnts by creating a new file.
    - Click on Build under Flow tab.
    - Once the BUild is complete, click on Vitis tab and click on Target Connections, select Local, and click on OK.
    - Now, click on Program Device.
