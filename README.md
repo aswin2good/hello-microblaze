@@ -1,4 +1,4 @@
-# Hello-MicroBlaze
+# Hello MicroBlaze
 ## Demonstration of Hello World Program by Implementation of MicroBlaze Processor on FPGA
 ---
 
